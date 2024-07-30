@@ -40,6 +40,43 @@ for (String fruit in fruits) {
   print(fruit);
 }
 
+/*Sets in Dart
+A Set in Dart is an unordered collection of unique elements. This means that each element can only appear once in a set.*/
+
+/*Creating a Set Dart*/
+print(fruits);
+
+//Adding elements
+fruits.add('grape'); // Adds 'grape' to the set
+
+//Removing elements
+fruits.remove('banana'); // Removes 'banana' from the set
+
+//Checking for elements Dart
+
+
+//Set operations
+//Union: Combines elements from two sets Dart
+//Use code with caution.
+
+//Intersection: Finds elements common to both sets
+//Dart
+//Use code with caution.
+
+//Difference: Finds elements in the first set but not in the second Dart
+
+
+//Iterating over a set Dart
+for (String fruit in fruits) {
+  print(fruit);
+}
+
+
+/*Important points
+Sets are unordered, so the order of elements is not guaranteed.
+Sets are efficient for checking if an element exists.
+Sets can be used to remove duplicates from a list.*/
+
 //Maps in Dart
 //A Map in Dart is a collection of key-value pairs. It's similar to a dictionary in Python.
 
