@@ -15,6 +15,19 @@ void main() {
     print(i);
   }
 
+  //Switch
+  var day = 'Thursday';
+  switch (day) {
+    case 'Monday':
+      print('Start of the week');
+      break;
+    case 'Friday':
+      print('End of the week');
+      break;
+    default:
+      print('Weekday');
+  }
+
   //While loop
   int i = 0;
   while (i < 10) {
