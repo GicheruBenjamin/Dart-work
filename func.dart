@@ -41,4 +41,3 @@ void grade(int marks) {
       break;
   }
 }
-

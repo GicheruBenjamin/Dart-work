@@ -99,13 +99,13 @@ ages['Bob'] = 28; // Modify an existing value
 ages.remove('Charlie'); // Remove a key-value pair
 
 //Common methods dart
-ages.keys; // Get a list of keys
-ages.values; // Get a list of values
-ages.length; // Get the number of key-value pairs
-ages.isEmpty; // Check if the map is empty
-ages.isNotEmpty; // Check if the map is not empty
-ages.containsKey('Alice'); // Check if a key exists
-ages.containsValue(30); // Check if a value exists
+print(ages.keys); // Get a list of keys
+print(ages.values); // Get a list of values
+print(ages.length); // Get the number of key-value pairs
+print(ages.isEmpty); // Check if the map is empty
+print(ages.isNotEmpty); // Check if the map is not empty
+print(ages.containsKey('Alice')); // Check if a key exists
+print(ages.containsValue(30)); // Check if a value exists
 
 
 //Iterating over a map Dart
