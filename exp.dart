@@ -12,8 +12,6 @@ class operations {
   int mul(int a, int b) {
     return a * b;
   }
-
-  
 }
 
 int find_mean(List<int> arr) {
