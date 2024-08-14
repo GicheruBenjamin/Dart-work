@@ -1,17 +1,23 @@
 //Like any other prog lang there are functions
 
 void main() {
-  truth();
   grade(75);
-}
 
+  //Applying the function below
+  print(add(10, 20));
+  print(car.drive());
+  print(talk('Irene'));
+  Work mywork = Work();
+  print(
+    mywork.plan() +
+        mywork
+            .design() +
+        mywork
+            .build(),
+  );
+}
 
 // This function does not return anything but It does the action of printing the str
-void truth() {
-  String tru = "I like her";
-  print(tru);
-}
-
 
 // This function does not return anything but It does the action of printing the grade
 void grade(int marks) {
@@ -45,3 +51,41 @@ void grade(int marks) {
       break;
   }
 }
+
+//Types of function
+//Top level functions
+//In general they  are accessible anywhere in the program and return a specific type
+
+int add(int a, int b) {
+  return a + b;
+}
+
+//Static methods
+//Inside classes but they are not really a instance of the class
+class car {
+  static String drive() {
+    return "I am driving";
+  }
+}
+
+// Class methods
+// Common for they make encapsulation in a class
+
+class Work {
+  String plan() {
+    return "I am laying out the ground work";
+  }
+
+  String design() {
+    return "I am putting down the structure";
+  }
+
+  String build() {
+    return "I am taking my time to hammer and do it actually";
+  }
+}
+
+// Anonymous functions
+// Functions that are not assigned to a variable
+
+var talk = (String name) => "Hello $name";
