@@ -5,11 +5,15 @@ void main() {
   grade(75);
 }
 
+
+// This function does not return anything but It does the action of printing the str
 void truth() {
   String tru = "I like her";
   print(tru);
 }
 
+
+// This function does not return anything but It does the action of printing the grade
 void grade(int marks) {
   if (marks < 0 || marks > 100) {
     print("Invalid marks");
