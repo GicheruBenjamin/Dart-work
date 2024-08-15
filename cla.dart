@@ -8,6 +8,9 @@ void main() {
   print(company._info);
   Employee employee = new Employee(18, "Harrison", 1000);
   print(employee.salary);
+  bird chicken = new bird();
+  chicken.eat();
+  chicken.sleep();
 }
 
 class Person {
@@ -22,7 +25,7 @@ class Company {
   String ceo;
 
   Company(this.name, this.ceo);
-  void _info(){
+  void _info() {
     this.name + " " + this.ceo;
   }
 }
@@ -32,5 +35,20 @@ class Employee extends Person {
   int salary = 0;
   Employee(int age, String name, int salary) : super(age, name) {
     this.salary = salary;
+  }
+}
+
+//Abstract class
+abstract class Animal {
+  void eat();
+  void sleep();
+}
+
+class bird extends Animal {
+  void eat() {
+    print("Eating");
+  }
+  void sleep() {
+    print("Sleeping");
   }
 }
