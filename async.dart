@@ -12,7 +12,8 @@ Future<String> fetchData() async {
 void main() {
   print('Starting...');
   fetchData().then((value) => print(value));
-  print(eat(3).then((value) => print(value)));
+  print('Waiting...');
+  complete().then((value) => print(value));
   print('Continuing...');
 }
 
@@ -21,7 +22,12 @@ void main() {
 
 // Testing
 
-Future <int> eat(int time)async{
-  await Future.delayed(Duration(seconds: time));
-  return time;
+dynamic count() {
+  for (int i = 0; i < 10000; i++) {
+    print('Counting: $i');
+  }
+}
+Future<String> complete()async{
+  await count();
+  return 'Complete';
 }
