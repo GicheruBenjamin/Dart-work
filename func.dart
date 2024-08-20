@@ -15,6 +15,7 @@ void main() {
         mywork
             .build(),
   );
+  print(code());
 }
 
 // This function does not return anything but It does the action of printing the str
@@ -89,3 +90,5 @@ class Work {
 // Functions that are not assigned to a variable
 
 var talk = (String name) => "Hello $name";
+
+String code() => "I am coding";
