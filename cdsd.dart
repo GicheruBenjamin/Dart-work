@@ -10,6 +10,7 @@ Set<String> fruits = {'apple', 'banana', 'orange'};
     'Bob': 30,
     'Charlie': 28
   };
+/* Always ensure that the types are as according to the way they are. */
 
 void main() {
   
